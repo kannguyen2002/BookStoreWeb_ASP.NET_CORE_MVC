@@ -17,5 +17,10 @@ namespace BookStore.DataAccess.Repository
         {
             _db = db;
         }
+
+        public void Update(ApplicationUser obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
