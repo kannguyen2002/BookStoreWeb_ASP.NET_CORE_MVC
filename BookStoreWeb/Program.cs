@@ -29,10 +29,12 @@ builder.Services.AddAuthentication().AddFacebook(option => {
     option.AppId = "910805270391512";
     option.AppSecret = "68be2eeb00387d82742f436f45d6dac6";
 });
-//builder.Services.AddAuthentication().AddMicrosoftAccount(option => {
-//    option.ClientId = "ec4d380d-d631-465d-b473-1e26ee706331";
-//    option.ClientSecret = "qMW8Q~LlEEZST~SDxDgcEVx_45LJQF2cQ_rEKcSQ";
-//});
+
+builder.Services.AddAuthentication().AddMicrosoftAccount(option =>
+{
+    option.ClientId = "90d545cc-28a4-4d23-92e8-431637b6f7fe";
+    option.ClientSecret = "h-L8Q~pqW83tIFVeTaKto2EvH2yDc-iYl~cPwb9d";
+});
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options => {
